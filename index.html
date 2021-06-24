@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warwick Folk</title>
+    <link rel="icon" href="./static/images/warwick-folk-logo.png">
 </head>
+
 <body>
+    
+    <template id="event-template">
+        <li><span class="what"></span> - <span class="when"></span> - <span class="where"></span></li>
+    </template>
+
     <h1>University of Warwick Folk Society</h1>
     <img src="./static/images/warwick-folk-logo.png"></img>
     <h2>Hi!</h2>
     <h3>Who are we?</h3>
     <h3>What we do?</h3>
-    <h2>Timetable</h2>
-    <h2>Band folders</h2>
+    well this is what we sound like...
+    <h2>Events (what - when - where)</h2>
+    <h3>Regular events</h3>
+    <ul id="regular-events"></ul>
+    <h3>Spontaneous events</h3>
+    <ul id="spontaneous-events"></ul>
+    <h2>The almighty band folder</h2>
+    <p>Here you can download our band folder this is an ever-evolving folder that has been updated since the dawn of the society. Thanks to... who have all contribute</p>
+    <h2>Other band folders</h2>
+    christmas special 
+    st andrews gig
+    <h2>Where can you find us... Facebook, youtube, soundcloud...</h2>
+    <h2>Society constitution </h2>
 </body>
+<script>
+    'use strict';
+
+    const regularEvents = [
+        // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
+        { what: 'Band practice', when: 'weekly on mondays', where: 'Wood Scawns room (in the lobby of the Art Center)' },
+        { what: 'Band pub session (usually not that much playing)', when: 'after band practice', where: 'Varsity or Dirty Duck' },
+        { what: 'Dance practice', when: 'weekly on thursdays', where: 'Westwood dance studio' },
+    ];
+
+    const spontaneousEvents = [
+        // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
+    ];
+
+    function appendEvents(templateId) {
+        const regularEventList = document.getElementById('regular-events');
+        const spontaneousEventList = document.getElementById('spontaneous-events');
+        const fragment = document.getElementById(templateId);
+
+        // Loop over the books and modify the given template
+        regularEvents.forEach(event => {
+            // Create an instance of the template content
+            const instance = document.importNode(fragment.content, true);
+            // Add relevant content to the template
+            instance.querySelector('.what').innerHTML = event.what;
+            instance.querySelector('.when').innerHTML = event.when;
+            instance.querySelector('.where').innerHTML = event.where;
+            // Append the instance ot the DOM
+            regularEventList.appendChild(instance);
+        });
+
+        // Loop over the books and modify the given template
+        spontaneousEvents.forEach(event => {
+            // Create an instance of the template content
+            const instance = document.importNode(fragment.content, true);
+            // Add relevant content to the template
+            instance.querySelector('.what').innerHTML = event.what;
+            instance.querySelector('.when').innerHTML = event.when;
+            instance.querySelector('.where').innerHTML = event.where;
+            // Append the instance ot the DOM
+            spontaneousEventList.appendChild(instance);
+        });
+    }
+
+    appendEvents('event-template');
+</script>
+
 </html>
+
+
