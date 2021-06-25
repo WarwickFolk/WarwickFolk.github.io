@@ -7,39 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warwick Folk</title>
     <link rel="icon" href="./static/images/warwick-folk-logo.png">
+    <link rel="stylesheet" href="./static/css/styles.css">
+
 </head>
 
 <body>
-    
+
     <template id="event-template">
-        <li><span class="what"></span> - <span class="when"></span> - <span class="where"></span></li>
+        <li><span class="what" style="font-weight: bold;"></span> - <span class="when"></span> - <span
+                class="where"></span></li>
     </template>
 
+    <span style="font-weight: bold; color: red;">/!\ Site under construction</span>
+    
     <h1>University of Warwick Folk Society</h1>
-    <img src="./static/images/warwick-folk-logo.png"></img>
-    <h2>Hi!</h2>
-    <h3>Who are we?</h3>
-    <h3>What we do?</h3>
-    well this is what we sound like...
-    <h2>Events (what - when - where)</h2>
-    <h3>Regular events</h3>
-    <ul id="regular-events"></ul>
-    <h3>Spontaneous events</h3>
-    <ul id="spontaneous-events"></ul>
-    <h2>The almighty band folder</h2>
-    <p>Here you can download our band folder this is an ever-evolving folder that has been updated since the dawn of the society. Thanks to... who have all contribute</p>
-    <h2>Other band folders</h2>
-    christmas special 
-    st andrews gig
-    <h2>Where can you find us... Facebook, youtube, soundcloud...</h2>
-    <h2>Society constitution </h2>
+    <img src="./static/images/warwick-folk-logo.png" class="horizontal-center"></img>
+
+    <p>Jump to the <a href="#events">Events</a> or <a href="#band">Band</a> section.</p>
+    
+    <h2>A little introduction...</h2>
+        <h3>Who are we?</h3>
+        <h3>What we do?</h3>
+            <p>well this is what we sound like...</p>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/4241430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/warwick-folk" title="Warwick Folk" target="_blank" style="color: #cccccc; text-decoration: none;">Warwick Folk</a> · <a href="https://soundcloud.com/warwick-folk/sets/recordings" title="Recordings" target="_blank" style="color: #cccccc; text-decoration: none;">Recordings</a></div>
+        <h3>What do we stand for? (i.e. society constitution)</h3>
+        <h3>Where can you find us?</h3>
+        <ul>
+            <li><a href="https://www.warwicksu.com/societies-sports/societies/warwickfolk/">Warwick Student Union website</a></li>
+            <li><a href="https://www.facebook.com/WarwickFolk/">Facebook</a></li>
+            <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwarwickfolk%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
+            <li><a href="https://www.youtube.com/user/warwickfolk">YouTube</a></li>
+            <li><a href="https://soundcloud.com/warwick-folk">SoundCloud</a></li>
+        </ul>
+    
+    <h2 id="events">Events (what - when - where)</h2>
+        <h3>Regular events</h3>
+            <ul id="regular-events"></ul>
+        <h3>Spontaneous events</h3>
+            <ul id="spontaneous-events"></ul>
+    
+    <h2 id="band">Band</h2>
+        <h3>The almighty band folder</h3>
+        <p>Here you can download our Band Folder. This is an ever-evolving folder that has been updated since the dawn of the
+            society. Thanks to... who have all contribute - if you wish to contribute to the band folder (new sets, tunes...) go to the <a href="#contribute">contribute</a> section</p>
+        <h3>Special sets</h3>
+            <p>christmas special, st andrews gig</p>
+    
+    <h2 id="contribute">Contribute</h2>
+        <p>You can contribute to the Almighty Band Folder by going to the <a href="https://github.com/WarwickFolk/band-folder">Band Folder</a> repository. You will also find guidance and instructions as to how to use <b>abc</b> (folk music notation system) there.</p>
+        <p>Any new tune suggestions and new sets can be submitted at weekly band practice or by contacting a member of the exec (via Facebook or email). The webmaster will add it to the page for distribution.</p>
+        <p>This is an open-source website produced under the <a href="https://github.com/WarwickFolk/WarwickFolk.github.io/blob/main/LICENSE">MIT Licence</a>, any and all contributions are welcome and you can contribute by going to the
+            <a href="https://github.com/WarwickFolk/WarwickFolk.github.io">Warwick Folk Landing Page</a> repository.</p>
 </body>
 <script>
     'use strict';
 
     const regularEvents = [
         // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
-        { what: 'Band practice', when: 'weekly on mondays', where: 'Wood Scawns room (in the lobby of the Art Center)' },
+        { what: 'Band practice', when: 'weekly on mondays', where: 'Woods Scawen room (in the lobby of the Art Center)' },
         { what: 'Band pub session (usually not that much playing)', when: 'after band practice', where: 'Varsity or Dirty Duck' },
         { what: 'Dance practice', when: 'weekly on thursdays', where: 'Westwood dance studio' },
     ];
@@ -80,7 +105,4 @@
 
     appendEvents('event-template');
 </script>
-
 </html>
-
-
