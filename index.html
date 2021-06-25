@@ -58,6 +58,10 @@
         <p>Any new tune suggestions and new sets can be submitted at weekly band practice or by contacting a member of the exec (via Facebook or email). The webmaster will add it to the page for distribution.</p>
         <p>This is an open-source website produced under the <a href="https://github.com/WarwickFolk/WarwickFolk.github.io/blob/main/LICENSE">MIT Licence</a>, any and all contributions are welcome and you can contribute by going to the
             <a href="https://github.com/WarwickFolk/WarwickFolk.github.io">Warwick Folk Landing Page</a> repository.</p>
+
+    <hr>
+    <p>The current maintainer is <i>Alexandre Shinebourne</i>. If you have any issues, queries or suggestions you can <a href="mailto: a.shinebourne@gmail.com">send me an email</a>.</p>
+    <p>Site last modified on <span id="last-modified"></span></p>
 </body>
 <script>
     'use strict';
@@ -104,5 +108,22 @@
     }
 
     appendEvents('event-template');
+
+    function setModifiedDate() {
+        if (document.getElementById('last-modified')) {
+            fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
+            .then((response) => {
+                return response.json();
+            })
+            .then((commits) => {
+                var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+                if(modified != "{{ page.date | date: '%Y-%m-%d' }}") {
+                document.getElementById('last-modified').textContent = "Last Modified: " + modified;
+                }
+            });
+        }
+    }
+
+    setModifiedDate();
 </script>
 </html>
