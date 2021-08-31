@@ -1,129 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warwick Folk</title>
-    <link rel="icon" href="./static/images/warwick-folk-logo.png">
-    <link rel="stylesheet" href="./static/css/styles.css">
-
-</head>
-
-<body>
-
+    <link rel="icon" href="./images/warwick-folk-logo.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- 
+      Template formating for an event on the website.
+      Use this every time you mention or describe a new event.
+      Add events in the script at the bottom of the page so that they are 
+      formated correctly and appear in the right place automatically.  
+    -->
     <template id="event-template">
-        <li><span class="what" style="font-weight: bold;"></span> - <span class="when"></span> - <span
-                class="where"></span></li>
+      <li>
+        <span class="what" style="font-weight: bold"></span> -
+        <span class="when"></span> - <span class="where"></span>
+      </li>
     </template>
 
-    <span style="font-weight: bold; color: red;">/!\ Site under construction</span>
-    
+    <!-- MAIN CONTENT -->
     <h1>University of Warwick Folk Society</h1>
-    <img src="./static/images/warwick-folk-logo.png" class="horizontal-center"></img>
+    <img src="./images/warwick-folk-logo.png" class="horizontal-center" />
 
-    <p>Jump to the <a href="#events">Events</a> or <a href="#band">Band</a> section.</p>
-    
+    <p>
+      Jump to <a href="#findus">where you can find us</a> or the
+      <a href="#events">events</a> and <a href="#band">band</a> sections.
+    </p>
+
     <h2>A little introduction...</h2>
-        <h3>Who are we?</h3>
-        <h3>What we do?</h3>
-            <p>well this is what we sound like...</p>
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/4241430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/warwick-folk" title="Warwick Folk" target="_blank" style="color: #cccccc; text-decoration: none;">Warwick Folk</a> · <a href="https://soundcloud.com/warwick-folk/sets/recordings" title="Recordings" target="_blank" style="color: #cccccc; text-decoration: none;">Recordings</a></div>
-        <h3>What do we stand for? (i.e. society constitution)</h3>
-        <h3>Where can you find us?</h3>
-        <ul>
-            <li><a href="https://www.warwicksu.com/societies-sports/societies/warwickfolk/">Warwick Student Union website</a></li>
-            <li><a href="https://www.facebook.com/WarwickFolk/">Facebook</a></li>
-            <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwarwickfolk%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
-            <li><a href="https://www.youtube.com/user/warwickfolk">YouTube</a></li>
-            <li><a href="https://soundcloud.com/warwick-folk">SoundCloud</a></li>
-        </ul>
-    
+    <h3>Who are we?</h3>
+    <p>
+      We are a collection of musicians, dancers, and generally curious
+      individuals who appreciate the various folk traditions that exist in
+      Britain and beyond.
+    </p>
+    <p>
+      All are welcome - whether you are a seasoned attendee of ceilidhs, an
+      instrumentalist looking to branch out or just generally looking for
+      something that is both new and traditional, Warwick Folk is here for you.
+    </p>
+    <p>
+      No experience needed (fun fact I had never played folk before coming to
+      university and knew very little about British folk culture but the society
+      provided a lovely relaxed insight into a really fun tradition).
+    </p>
+    <h3>What we do?</h3>
+    <p>
+      We play and dance to a large array of traditional folk music and perform
+      live throughout the year. We also periodically host Ceilidhs for all to
+      join in the fun.
+    </p>
+    <p>This is what we sound like...</p>
+    <iframe
+      width="100%"
+      height="300"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/4241430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+    ></iframe>
+    <p>And this is how we dance...</p>
+    <iframe
+      class="horizontal-center"
+      width="75%"
+      height="400"
+      src="https://www.youtube.com/embed/XYRfg9h6x3E"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <h3>What do we stand for? (i.e. society constitution)</h3>
+    <p>
+      Warwick Folk is an inclusive society that seeks to ensure the enjoyment of
+      all its members. All skill levels are welcome and will be accommodated. We
+      endeavour to provide the best conditions for sharing the folk traditions.
+    </p>
+    <h3 id="findus">Where can you find us?</h3>
+    <p>
+      The best way to get into contact with us is by messaging the
+      <a href="https://www.facebook.com/WarwickFolk/">Folk Facebook page</a>
+    </p>
+    <ul>
+      <li>
+        Email us at
+        <a href="mailto:su165b@warwicksu.com">su165b@warwicksu.com</a>
+      </li>
+      <li>
+        <a
+          href="https://www.warwicksu.com/societies-sports/societies/warwickfolk/"
+          >Warwick Student Union website</a
+        >
+      </li>
+      <li><a href="https://www.facebook.com/WarwickFolk/">Facebook</a></li>
+      <li><a href="https://www.youtube.com/user/warwickfolk">YouTube</a></li>
+      <li><a href="https://soundcloud.com/warwick-folk">SoundCloud</a></li>
+    </ul>
+    <p>Here's what we've been up to...</p>
+    <iframe
+      class="horizontal-center"
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwarwickfolk%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+      width="340"
+      height="500"
+      style="border: none; overflow: hidden"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    ></iframe>
+
+    <!-- 
+      Don't touch this section. Add events in the <script> section at the 
+      bottom of the page.
+    -->
     <h2 id="events">Events (what - when - where)</h2>
-        <h3>Regular events</h3>
-            <ul id="regular-events"></ul>
-        <h3>Spontaneous events</h3>
-            <ul id="spontaneous-events"></ul>
-    
+    <h3>Regular events</h3>
+    <ul id="regular-events"></ul>
+    <h3>Spontaneous events</h3>
+    <ul id="spontaneous-events"></ul>
+
     <h2 id="band">Band</h2>
-        <h3>The almighty band folder</h3>
-        <p>Here you can download our Band Folder. This is an ever-evolving folder that has been updated since the dawn of the
-            society. Thanks to... who have all contribute - if you wish to contribute to the band folder (new sets, tunes...) go to the <a href="#contribute">contribute</a> section</p>
-        <h3>Special sets</h3>
-            <p>christmas special, st andrews gig</p>
-    
+    <h3>The one and only Band Folder</h3>
+    <p>
+      Here you can download our Band Folder. This is an ever-evolving folder
+      that has been with us since the dawn of the society. All members can
+      contribute their favourite tunes. If you wish to contribute to the band
+      folder by suggesting new sets and tunes see the
+      <a href="#contribute">contribute</a> section of the website.
+    </p>
+    <ul>
+      <li>
+        <a href="./pdfs/FolkBandFolder2020.pdf"
+          >The Band Folder (treble clef)</a
+        >
+      </li>
+      <li>
+        <a href="./pdfs/FolkBandFolder2020Bass.pdf"
+          >The Band Folder (bass clef)</a
+        >
+      </li>
+    </ul>
+    <h3>Special sets</h3>
+    <p>
+      We also have a collection of special sets that are customised to spefic
+      performances and times of the year
+    </p>
+    <p>christmas special, st andrews gig</p>
+    <ul>
+      <li>The christmas special ?</li>
+      <li>
+        St Andrews & Burns Gig
+        <a href="./pdfs/Scottish-Ceilidh-Tunes-Printable-format.pdf"
+          >The Band Folder (treble clef)</a
+        >
+      </li>
+    </ul>
+
     <h2 id="contribute">Contribute</h2>
-        <p>You can contribute to the Almighty Band Folder by going to the <a href="https://github.com/WarwickFolk/band-folder">Band Folder</a> repository. You will also find guidance and instructions as to how to use <b>abc</b> (folk music notation system) there.</p>
-        <p>Any new tune suggestions and new sets can be submitted at weekly band practice or by contacting a member of the exec (via Facebook or email). The webmaster will add it to the page for distribution.</p>
-        <p>This is an open-source website produced under the <a href="https://github.com/WarwickFolk/WarwickFolk.github.io/blob/main/LICENSE">MIT Licence</a>, any and all contributions are welcome and you can contribute by going to the
-            <a href="https://github.com/WarwickFolk/WarwickFolk.github.io">Warwick Folk Landing Page</a> repository.</p>
+    <h3>Musical contributions</h3>
+    <p>
+      You can contribute to the Band Folder by going to the
+      <a href="https://github.com/WarwickFolk/band-folder">Band Folder</a>
+      repository. You will also find guidance and instructions as how to use
+      <b>abc</b> (common folk music notation system) there.
+    </p>
+    <p>
+      Any new tune suggestions and new sets can be submitted at weekly band
+      practice or by contacting a member of the exec (via Facebook or email).
+      The webmaster will add it to the page for distribution.
+    </p>
+    <h3>Website contributions</h3>
+    <p>
+      This is an open-source website produced under the
+      <a href="./LICENSE">MIT Licence</a>, any and all contributions are welcome
+      and you can contribute by going to the
+      <a href="https://github.com/WarwickFolk/WarwickFolk.github.io"
+        >Warwick Folk Landing Page</a
+      >
+      repository.
+    </p>
 
-    <hr>
-    <p>The current maintainer is <i>Alexandre Shinebourne</i>. If you have any issues, queries or suggestions you can <a href="mailto: a.shinebourne@gmail.com">send me an email</a>.</p>
-    <p>Last modified on <span id="last-modified" style="font-weight: bold;"></span>.</p>
-</body>
-<script>
-    'use strict';
+    <hr />
+    <p>
+      The current maintainer is <i>Alexandre Shinebourne</i>. If you have any
+      issues, queries or suggestions you can
+      <a href="mailto:a.shinebourne@gmail.com">send me an email</a>.
+    </p>
+    <p>
+      Last modified on
+      <span id="last-modified" style="font-weight: bold"></span>.
+    </p>
+  </body>
+  <script>
+    "use strict";
 
+    // ADD NEW REGULAR EVENTS HERE!
+    // Here is where you can add regular events to the page, use the following
+    // format:
+    // {
+    //   what: '<EVENT TITLE>',
+    //   when: '<EVENT DATE & TIME>',
+    //   where: '<EVENT LOCATION>'
+    // },
     const regularEvents = [
-        // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
-        { what: 'Band practice', when: 'weekly on mondays', where: 'Woods Scawen room (in the lobby of the Art Center)' },
-        { what: 'Band pub session (usually not that much playing)', when: 'after band practice', where: 'Varsity or Dirty Duck' },
-        { what: 'Dance practice', when: 'weekly on thursdays', where: 'Westwood dance studio' },
+      // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
+      {
+        what: "Band practice",
+        when: "weekly on mondays",
+        where: "Woods Scawen room (in the lobby of the Art Center)",
+      },
+      {
+        what: "Band pub session (usually not that much playing involved)",
+        when: "after band practice",
+        where: "Varsity or Dirty Duck",
+      },
+      {
+        what: "Dance practice",
+        when: "weekly on thursdays",
+        where: "Westwood dance studio",
+      },
     ];
 
+    // ADD NEW SPONTANEOUS EVENTS HERE!
+    // Here is where you can add spontaneous events to the page, use the
+    // following format:
+    // {
+    //   what: '<EVENT TITLE>',
+    //   when: '<EVENT DATE & TIME>',
+    //   where: '<EVENT LOCATION>'
+    // }
     const spontaneousEvents = [
-        // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
+      // { what: '<EVENT TITLE>', when: '<EVENT DATE & TIME>', where: '<EVENT LOCATION>' },
+      {
+        what: "Societies Fair",
+        when: "Welcome week TBD",
+        where: "Societies Fair",
+      },
     ];
 
+    // Don't touch this stuff (it's what renders the events)
     function appendEvents(templateId) {
-        const regularEventList = document.getElementById('regular-events');
-        const spontaneousEventList = document.getElementById('spontaneous-events');
-        const fragment = document.getElementById(templateId);
+      const regularEventList = document.getElementById("regular-events");
+      const spontaneousEventList =
+        document.getElementById("spontaneous-events");
+      const fragment = document.getElementById(templateId);
 
-        // Loop over the books and modify the given template
-        regularEvents.forEach(event => {
-            // Create an instance of the template content
-            const instance = document.importNode(fragment.content, true);
-            // Add relevant content to the template
-            instance.querySelector('.what').innerHTML = event.what;
-            instance.querySelector('.when').innerHTML = event.when;
-            instance.querySelector('.where').innerHTML = event.where;
-            // Append the instance ot the DOM
-            regularEventList.appendChild(instance);
-        });
+      // Loop over the books and modify the given template
+      regularEvents.forEach((event) => {
+        // Create an instance of the template content
+        const instance = document.importNode(fragment.content, true);
+        // Add relevant content to the template
+        instance.querySelector(".what").innerHTML = event.what;
+        instance.querySelector(".when").innerHTML = event.when;
+        instance.querySelector(".where").innerHTML = event.where;
+        // Append the instance ot the DOM
+        regularEventList.appendChild(instance);
+      });
 
-        // Loop over the books and modify the given template
-        spontaneousEvents.forEach(event => {
-            // Create an instance of the template content
-            const instance = document.importNode(fragment.content, true);
-            // Add relevant content to the template
-            instance.querySelector('.what').innerHTML = event.what;
-            instance.querySelector('.when').innerHTML = event.when;
-            instance.querySelector('.where').innerHTML = event.where;
-            // Append the instance ot the DOM
-            spontaneousEventList.appendChild(instance);
-        });
+      // Loop over the books and modify the given template
+      spontaneousEvents.forEach((event) => {
+        // Create an instance of the template content
+        const instance = document.importNode(fragment.content, true);
+        // Add relevant content to the template
+        instance.querySelector(".what").innerHTML = event.what;
+        instance.querySelector(".when").innerHTML = event.when;
+        instance.querySelector(".where").innerHTML = event.where;
+        // Append the instance ot the DOM
+        spontaneousEventList.appendChild(instance);
+      });
     }
 
-    appendEvents('event-template');
+    appendEvents("event-template");
 
+    // Don't touch this stuff (it's what adds the last modified date)
     function setModifiedDate() {
-        if (document.getElementById('last-modified')) {
-            fetch("https://api.github.com/repos/WarwickFolk/WarwickFolk.github.io/commits")
-            .then((response) => {
-                return response.json();
-            })
-            .then((commits) => {
-                var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-                if(modified != "{{ page.date | date: '%Y-%m-%d' }}") {
-                document.getElementById('last-modified').textContent = modified;
-                }
-            });
-        }
+      if (document.getElementById("last-modified")) {
+        fetch(
+          "https://api.github.com/repos/WarwickFolk/WarwickFolk.github.io/commits"
+        )
+          .then((response) => {
+            return response.json();
+          })
+          .then((commits) => {
+            var modified = commits[0]["commit"]["committer"]["date"].slice(
+              0,
+              10
+            );
+            if (modified != "{{ page.date | date: '%Y-%m-%d' }}") {
+              document.getElementById("last-modified").textContent = modified;
+            }
+          });
+      }
     }
 
     setModifiedDate();
-</script>
+  </script>
 </html>
