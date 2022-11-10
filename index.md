@@ -18,7 +18,7 @@ Our style of playing tends to focus more on the enthusiasm than keeping to the d
 
 We meet every Tuesday during term time for a session, around 7pm in the Woods Scawen Room in the Arts Centre. Whether you're a complete beginner, a seasoned folk-player, or just fancy listening to some folk in a relaxed enviroment, we would love to see you!
 
-Throughout the term we also run many events from ceilidh dancing nights to campfire sing abouts! Our next Ceilidh will be our St Andrew's Day Ceilidh organised with Scot Soc in late November.
+Throughout the term we also run many events from ceilidh dancing nights to campfire sing abouts! Our next Ceilidh will be our St Andrew's Day Ceilidh organised with Scot Soc in early December.
 
 ![Ceilidh Dancing](/assets/img/ceilidhdance.jpg)
 
