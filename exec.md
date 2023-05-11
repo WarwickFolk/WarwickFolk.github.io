@@ -29,7 +29,7 @@ email: [niamh.o-reilly@warwick.ac.uk](niamh.o-reilly@warwick.ac.uk)
 
 ### Social Officer
 #### Harry Keith
-![Welfare](/assets/img/welfare.png)
+![Welfare](/assets/img/social.png)
 
 email: [harry.keith@warwick.ac.uk](harry.keith@warwick.ac.uk)
 
