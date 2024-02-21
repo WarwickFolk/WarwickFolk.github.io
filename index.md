@@ -18,7 +18,7 @@ Our style of playing tends to focus more on the enthusiasm than keeping to the d
 
 We meet every Tuesday during term time for a session, around 7pm in the National Grid Room in the Arts Centre. Whether you're a complete beginner, a seasoned folk-player, or just fancy listening to some folk in a relaxed enviroment, we would love to see you!
 
-Throughout the term we also run many events from ceilidh dancing nights to campfire sing abouts! Our next Ceilidh will be our St Andrew's Day Ceilidh organised with Scot Soc in early December.
+Throughout the term we also run many events from ceilidh dancing nights to campfire sing abouts! Check out the events page to find more!
 
 ![Ceilidh Dancing](/assets/img/ceilidhdance.jpg)
 
@@ -37,7 +37,7 @@ The society has an everchanging *bandfolder* which houses many of our favourite 
 - [Warwick Folk Soundcloud](https://soundcloud.com/warwick-folk)
 
 You can contribute to the Band Folder by going to the [Band Folder repository](https://github.com/WarwickFolk/band-folder). 
-You will also find guidance and instructions as how to use abc (a common folk music notation system) there. 
+You will also find our ceilidh sets and some other tunes there, as well as guidance and instructions as how to use abc (a common folk music notation system).
 
 
 
