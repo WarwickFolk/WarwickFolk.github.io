@@ -32,6 +32,10 @@ The society has an everchanging *bandfolder* which houses many of our favourite 
 - [Warwick Band Folder (Bb)](/assets/pdf/FolkBandFolder2020-Bb.pdf)
 - [Warwick Band Folder (D)](/assets/pdf/FolkBandFolder2020-D.pdf)
 
+#### See also
+
+- [Warwick Folk Soundcloud](https://soundcloud.com/warwick-folk)
+
 You can contribute to the Band Folder by going to the [Band Folder repository](https://github.com/WarwickFolk/band-folder). 
 You will also find guidance and instructions as how to use abc (a common folk music notation system) there. 
 
